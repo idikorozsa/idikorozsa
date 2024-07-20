@@ -243,15 +243,15 @@ header .banner {
     height: 300px;
 }
 #work-1 {
-    background: url("../images/law-book.webp") no-repeat 100%;
+    background: url("./images/soul-realignment.webp") no-repeat 100%;
     background-size: cover;
 }
 #work-2 {
-    background: url("../images/foreclosed.webp") no-repeat 100%;
+    background: url("./images/aka.jpg") no-repeat 100%;
     background-size: cover;
 }
 #work-3 {
-    background: url("../images/flag.webp") no-repeat 100%;
+    background: url("./images/property-clearing.jpg") no-repeat 100%;
     background-size: cover;
 }
 .block::after, .block::before {
