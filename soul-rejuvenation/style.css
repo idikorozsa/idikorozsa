@@ -24,9 +24,10 @@ html {
     background-size: cover;
     color: #dede8d;
 }
- .white {
-    color:#ffffff;;
-    text-shadow: -1px -1px 0 #03387d, 1px -1px 0 #03387d, -1px 1px 0 #03387d, 1px 1px 0 #03387d;
+.white {
+    color:#ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 4px 0 #000000, 3px 4px 0 #000000;
+    font-weight: bolder;
 }
 
 #yellow {
@@ -409,7 +410,6 @@ textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
     width: 100%;
 }
 /*footer end*/
