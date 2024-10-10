@@ -22,11 +22,13 @@ html {
     background-image: url(./images/mountains.webp);
     background-position: 1%;
     background-size: cover;
-    color: #dede8d;
+    color: #dff704;
+    font-weight: bolder;
 }
  .white {
-    color:#ffffff;;
-    text-shadow: -1px -1px 0 #03387d, 1px -1px 0 #03387d, -1px 1px 0 #03387d, 1px 1px 0 #03387d;
+    color:#ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 4px 0 #000000, 3px 4px 0 #000000;
+    font-weight: bolder;
 }
 
 #yellow {
@@ -40,7 +42,7 @@ html {
   }
  
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.7rem;
 }
@@ -104,6 +106,7 @@ a {
   .nav-mobile {
     display: none;
     position: fixed;
+  
     top: 4.5rem;
     left: 0;
     overflow: hidden;
@@ -116,6 +119,7 @@ a {
     color: white;
     padding: 1rem 1.5rem;
     display: block;
+    
   }
   
   hr {
@@ -285,18 +289,20 @@ header .banner {
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
-    font-size: 2rem;
+    font-size: 3.2rem;
     letter-spacing: 0.4rem;
     position: absolute;
     border-radius: 10px;
     display: block;
     padding: 15px 2px;
     width: 60%;
-    left: 20%;
-    top:-40%;
+    left: 0%;
+    top:33%;
     z-index: 1;
-    color: #fff;
-    border: 2px solid #fff;
+    color:#ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 4px 0 #000000, 3px 4px 0 #000000;
+    font-weight: bolder;
+ 
     transition: top 0.5s;
 }
 .block:hover .works-caption {
@@ -311,7 +317,7 @@ header .banner {
 .skills {
     background: #450557;
     text-align: center;
-    color: #ffb424;
+    color: #fbfbfb;
     padding: 10px;
 }
 .skills-pic {
