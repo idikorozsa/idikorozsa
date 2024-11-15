@@ -22,10 +22,9 @@ html {
     background-image: url(./images/mountains.webp);
     background-position: 1%;
     background-size: cover;
-    color: #dff704;
-    font-weight: bolder;
+    color: #dede8d;
 }
- .white {
+.white {
     color:#ffffff;
     text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 4px 0 #000000, 3px 4px 0 #000000;
     font-weight: bolder;
@@ -42,7 +41,7 @@ html {
   }
  
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.7rem;
 }
@@ -71,6 +70,47 @@ a {
   ::selection {
     background-color: #e8ffff;
     color: #373a40;
+  }
+  .button-46 {
+    align-items: center;
+    background-color:#FFFFFF;
+    border: 1px solid #DFDFDF;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+   margin-bottom: 4px;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 28px;
+    max-width: 100%;
+    padding: 14px 22px;
+    text-decoration: none;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10%;
+
+  }
+  
+  .button-46:active,
+  .button-46:hover {
+    outline: 0;
+  }
+  
+  .button-46:hover {
+    background-color: #ffb424;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+  
+  @media (min-width: 768px) {
+    .button-46 {
+      font-size: 20px;
+      min-width: 200px;
+      padding: 14px 16px;
+    }
   }
   
   /* Navigation Bar*/
@@ -106,7 +146,6 @@ a {
   .nav-mobile {
     display: none;
     position: fixed;
-  
     top: 4.5rem;
     left: 0;
     overflow: hidden;
@@ -119,7 +158,6 @@ a {
     color: white;
     padding: 1rem 1.5rem;
     display: block;
-    
   }
   
   hr {
@@ -186,7 +224,7 @@ p {
 }
 /*banner*/
 header .banner {
-    background: url("./images/healingHeader.jpg") 70% no-repeat;
+    background: url("./soul-realignment.webp") 70% no-repeat;
     background-position: top;
     background-size: 100%;
     height: 55%;
@@ -289,20 +327,18 @@ header .banner {
 .works-caption {
     text-align: center;
     font-family: "Lato", serif;
-    font-size: 3.2rem;
+    font-size: 2rem;
     letter-spacing: 0.4rem;
     position: absolute;
     border-radius: 10px;
     display: block;
     padding: 15px 2px;
     width: 60%;
-    left: 0%;
-    top:33%;
+    left: 20%;
+    top:-40%;
     z-index: 1;
-    color:#ffffff;
-    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 4px 0 #000000, 3px 4px 0 #000000;
-    font-weight: bolder;
- 
+    color: #fff;
+    border: 2px solid #fff;
     transition: top 0.5s;
 }
 .block:hover .works-caption {
@@ -317,7 +353,7 @@ header .banner {
 .skills {
     background: #450557;
     text-align: center;
-    color: #fbfbfb;
+    color: #ffb424;
     padding: 10px;
 }
 .skills-pic {
