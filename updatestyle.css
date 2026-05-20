@@ -2685,3 +2685,16 @@ blockquote {
     animation: none !important;
   }
 }
+.touch-device .service-card:hover,
+.touch-device .book-button:hover,
+.touch-device .hero-button:hover,
+.touch-device .contact-link:hover,
+.touch-device .quote-box:hover,
+.touch-device .close-modal:hover {
+
+  transform: none !important;
+
+  box-shadow: inherit !important;
+
+  text-shadow: inherit !important;
+}
