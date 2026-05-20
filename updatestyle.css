@@ -2622,3 +2622,66 @@ blockquote {
 }
 
 
+@media (hover: none) and (pointer: coarse) {
+
+  /* Disable hover transforms */
+  *:hover {
+
+    transform: none !important;
+  }
+
+  /* Disable glow/shadow hover effects */
+  *:hover {
+
+    box-shadow: none !important;
+
+    text-shadow: none !important;
+  }
+
+  /* Disable hover transitions */
+  * {
+
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease !important;
+  }
+
+  /* Buttons */
+  .book-button:hover,
+  .hero-button:hover,
+  .service-card:hover,
+  .contact-link:hover {
+
+    transform: none !important;
+
+    box-shadow: inherit !important;
+  }
+
+  /* Service cards */
+  .service-card:hover {
+
+    translate: none !important;
+  }
+
+  /* Navbar links */
+  .nav-links a:hover {
+
+    background: inherit !important;
+
+    backdrop-filter: none !important;
+  }
+
+  /* Modal buttons */
+  .close-modal:hover {
+
+    transform: none !important;
+  }
+
+  /* Glow animations */
+  .hero-title:hover,
+  .quote-box:hover,
+  .modal-content:hover {
+
+    animation: none !important;
+  }
+}
