@@ -2698,7 +2698,4 @@ blockquote {
 
   text-shadow: inherit !important;
 }
-.touch-device * {
 
-  animation-play-state: paused !important;
-}
