@@ -891,5 +891,16 @@ Align your property to your vibration. clear out energies from previous resident
 </div>
 
   <script defer src="updatescript.js"></script>
+	<script>
+
+  if (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0
+  ) {
+
+    document.body.classList.add("touch-device");
+  }
+
+</script>
 </body>
 </html>
