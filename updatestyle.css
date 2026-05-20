@@ -2715,3 +2715,26 @@ blockquote {
 
   filter: none !important;
 }
+.touch-device .hero-buttons .btn-primary:hover,
+.touch-device .hero-buttons .btn-secondary:hover {
+
+  animation: none !important;
+
+  transform: none !important;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25) !important;
+
+  background-position: initial !important;
+
+  filter: none !important;
+}
+.touch-device .hero-buttons .btn-primary:hover::before,
+.touch-device .hero-buttons .btn-primary:hover::after,
+.touch-device .hero-buttons .btn-secondary:hover::before,
+.touch-device .hero-buttons .btn-secondary:hover::after {
+
+  opacity: 0 !important;
+
+  animation: none !important;
+}
