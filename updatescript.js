@@ -36,3 +36,97 @@ hiddenElements.forEach((el) => {
   el.classList.add('hidden');
   observer.observe(el);
 });
+
+
+const modal =
+  document.getElementById("service-modal");
+
+const modalTitle =
+  document.getElementById("modal-title");
+
+const modalDescription =
+  document.getElementById("modal-description");
+
+const modalDetails =
+  document.getElementById("modal-details");
+
+const openButtons =
+  document.querySelectorAll(".open-modal");
+
+const closeButton =
+  document.querySelector(".close-modal");
+
+const overlay =
+  document.querySelector(".modal-overlay");
+
+openButtons.forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    modalTitle.textContent =
+      button.dataset.title;
+
+    modalDescription.textContent =
+      button.dataset.description;
+
+    modalDetails.innerHTML =
+      button.dataset.details;
+
+    modal.classList.add("active");
+
+  });
+
+});
+
+function closeModal() {
+
+  modal.classList.remove("active");
+
+}
+
+closeButton.addEventListener(
+  "click",
+  closeModal
+);
+
+overlay.addEventListener(
+  "click",
+  closeModal
+);
+
+
+const scrollButtons =
+  document.querySelectorAll(".close-and-scroll");
+
+scrollButtons.forEach(button => {
+
+  button.addEventListener("click", (e) => {
+
+    e.preventDefault();
+
+    const modal =
+      button.closest(".modal");
+
+    modal.classList.remove("active");
+
+    const target =
+      document.querySelector("#contact");
+
+    setTimeout(() => {
+
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    }, 300);
+
+  });
+
+});
+document.addEventListener("keydown", (e) => {
+
+  if (e.key === "Escape") {
+
+    modal.classList.remove("active");
+  }
+});
